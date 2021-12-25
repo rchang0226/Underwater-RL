@@ -34,4 +34,6 @@ public class WaterSettings
 	public Color mudExtinction;
 	public Color waterExtinction;
 	public Color sunExtinction;
+
+	public static float controlVisibility = 20f;
 }

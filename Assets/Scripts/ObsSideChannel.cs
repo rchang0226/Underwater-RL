@@ -7,6 +7,8 @@ using Unity.MLAgents.SideChannels;
 
 public class ObsSideChannel : SideChannel
 {
+    //WaterSettings settings = WaterSettings.Default;
+
     public ObsSideChannel()
     {
         ChannelId = new Guid("621f0a70-4f87-11ea-a6bf-784f4387d1f7");
@@ -14,7 +16,9 @@ public class ObsSideChannel : SideChannel
 
     protected override void OnMessageReceived(IncomingMessage msg)
     {
-
+        var visibility = msg.ReadFloat32();
+        WaterSettings.controlVisibility = visibility;
+        //Debug.Log(WaterSettings.controlVisibility);
     }
 
     public void SendObsToPython(float horizontalDist, float verticleDist, float Angle, float Depth_from_Surface)

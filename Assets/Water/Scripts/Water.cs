@@ -121,13 +121,17 @@ public class Water : MonoBehaviour
 		
 		float sunFade = Mathf.Clamp01((.1f - lightDir.y) * 10);
 		float scatterFade = Mathf.Clamp01((.15f - lightDir.y) * 4);
-		
-		if(surfaceMaterial)
+
+		//Debug.Log(testtest);
+
+		if (surfaceMaterial)
 		{
 			surfaceMaterial.SetTexture("_NormalTex", settings.normalTexture);
 			surfaceMaterial.SetVector("_WindDirection", settings.windDirection);
 			surfaceMaterial.SetFloat("_WindSpeed", settings.windSpeed);
-			surfaceMaterial.SetFloat("_Visibility", settings.visibility);
+			//surfaceMaterial.SetFloat("_Visibility", settings.visibility);
+			surfaceMaterial.SetFloat("_Visibility", WaterSettings.controlVisibility);
+
 			surfaceMaterial.SetFloat("_WaveScale", settings.waveScale);
 			surfaceMaterial.SetFloat("_ScatterAmount", settings.scatterAmount);
 			surfaceMaterial.SetColor("_ScatterColor", settings.scatterColor);
@@ -145,7 +149,10 @@ public class Water : MonoBehaviour
 			element.SetTexture("_NormalTex", settings.normalTexture);
 			element.SetVector("_WindDirection", settings.windDirection);
 			element.SetFloat("_WindSpeed", settings.windSpeed);
-			element.SetFloat("_Visibility", settings.visibility);
+
+			//element.SetFloat("_Visibility", settings.visibility);
+			element.SetFloat("_Visibility", WaterSettings.controlVisibility);
+
 			element.SetFloat("_WaveScale", settings.waveScale);
 			element.SetColor("_MudExtinction", settings.mudExtinction);
 			element.SetColor("_WaterExtinction", settings.waterExtinction);
