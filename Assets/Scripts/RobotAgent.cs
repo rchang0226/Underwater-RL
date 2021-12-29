@@ -82,13 +82,13 @@ public class RobotAgent : Agent
             {
                 randomGoalX = Random.Range(-4f, -3f);
                 randomGoalY = Random.Range(-2f, -1f);
-                randomGoalZ = Random.Range(-4.5f, -3.5f);
+                randomGoalZ = Random.Range(-5.7f, -4.7f);
             }
             else
             {
                 randomGoalX = Random.Range(3f, 4f);
                 randomGoalY = Random.Range(-2f, -1f);
-                randomGoalZ = Random.Range(-4.5f, -3.5f);
+                randomGoalZ = Random.Range(-5.7f, -4.7f);
             }
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
