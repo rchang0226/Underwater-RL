@@ -82,13 +82,13 @@ public class RobotAgent : Agent
             {
                 randomGoalX = Random.Range(-4f, -3f);
                 randomGoalY = Random.Range(-2f, -1f);
-                randomGoalZ = Random.Range(-5.7f, -4.7f);
+                randomGoalZ = Random.Range(-7.0f, -8.0f);
             }
             else
             {
                 randomGoalX = Random.Range(3f, 4f);
                 randomGoalY = Random.Range(-2f, -1f);
-                randomGoalZ = Random.Range(-5.7f, -4.7f);
+                randomGoalZ = Random.Range(-7.0f, -8.0f);
             }
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
@@ -100,7 +100,7 @@ public class RobotAgent : Agent
         {
             var randomPosX = Random.Range(-4f, -3f);
             var randomPosY = Random.Range(-2f, -1f);
-            var randomPosZ = Random.Range(-4.5f, -3.5f);
+            var randomPosZ = Random.Range(-7f, -8f);
 
             float rotationAngle = Random.Range(-45f, 135f);
 
@@ -127,7 +127,7 @@ public class RobotAgent : Agent
         {
             var randomPosX = Random.Range(3f, 4f);
             var randomPosY = Random.Range(-2f, -1f);
-            var randomPosZ = Random.Range(-4.5f, -3.5f);
+            var randomPosZ = Random.Range(-7f, -8f);
 
             float rotationAngle = Random.Range(-135f, 45f);
 
@@ -160,7 +160,7 @@ public class RobotAgent : Agent
 
             randomGoalX = Random.Range(8f, 9f);
             randomGoalY = Random.Range(-2.5f, -1.5f);
-            randomGoalZ = Random.Range(8f, 9f);
+            randomGoalZ = Random.Range(9f, 10f);
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
 
@@ -177,7 +177,7 @@ public class RobotAgent : Agent
 
             randomGoalX = Random.Range(-9f, -8f);
             randomGoalY = Random.Range(-2.5f, -1.5f);
-            randomGoalZ = Random.Range(8f, 9f);
+            randomGoalZ = Random.Range(9f, 10f);
 
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
