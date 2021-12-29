@@ -21,10 +21,12 @@ public class ObsSideChannel : SideChannel
         //Debug.Log(WaterSettings.controlVisibility);
     }
 
-    public void SendObsToPython(float horizontalDist, float verticleDist, float Angle, float Depth_from_Surface)
+    public void SendObsToPython(float horizontalDist, float verticleDist, float Angle,
+    float Depth_from_Surface, float pos_z)
     {
 
-        List<float> msgToSend = new List<float>() { horizontalDist, verticleDist, Angle, Depth_from_Surface };
+        List<float> msgToSend = new List<float>() { horizontalDist, verticleDist, Angle, Depth_from_Surface,
+         pos_z };
         using (var msgOut = new OutgoingMessage())
         {
             msgOut.WriteFloatList(msgToSend);

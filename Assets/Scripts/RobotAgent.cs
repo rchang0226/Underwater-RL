@@ -212,7 +212,7 @@ public class RobotAgent : Agent
             new Vector3(randomGoalX, randomGoalY, randomGoalZ), ObsInfo.Item1, ObsInfo.Item2, ObsInfo.Item3);
 
         AddReward(-1f / MaxStep);
-        obsSideChannel.SendObsToPython(ObsInfo.Item1, ObsInfo.Item2, ObsInfo.Item3, ObsInfo.Item4);
+        obsSideChannel.SendObsToPython(ObsInfo.Item1, ObsInfo.Item2, ObsInfo.Item3, ObsInfo.Item4, m_AgentRb.transform.position[0]);
     }
 
     public (float, float, float, float) GetObsInfo()
