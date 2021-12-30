@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18285203, g: 0.22603697, b: 0.29234004, a: 1}
+  m_IndirectSpecularColor: {r: 0.15138334, g: 0.17098057, b: 0.17868632, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -809,7 +809,7 @@ SphereCollider:
   m_GameObject: {fileID: 556738869}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -1628,7 +1628,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 06618ef051ba8422a85c276d05b5be98, type: 2}
     - target: {fileID: 114451531188865348, guid: 20de1bf9e984c4606a378e2e88960fe2, type: 3}
       propertyPath: settings.visibility
-      value: 20
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114451531188865348, guid: 20de1bf9e984c4606a378e2e88960fe2, type: 3}
       propertyPath: groundMaterials.Array.size
@@ -2269,7 +2269,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8175037, b: 0.7781819, a: 0}
+  m_Color: {r: 1, g: 0.5800593, b: 0.35932153, a: 0}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -2327,7 +2327,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884265312}
-  m_LocalRotation: {x: 0.17232572, y: 0.3759675, z: -0.07137965, w: 0.90766585}
+  m_LocalRotation: {x: 0.4580097, y: 0.88589144, z: 0.0022442993, w: 0.07361089}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
