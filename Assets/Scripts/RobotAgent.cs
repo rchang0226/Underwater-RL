@@ -82,13 +82,13 @@ public class RobotAgent : Agent
             {
                 randomGoalX = Random.Range(-4f, -3f);
                 randomGoalY = Random.Range(-2f, -1f);
-                randomGoalZ = Random.Range(-7.0f, -8.0f);
+                randomGoalZ = Random.Range(-7.5f, -8.5f);
             }
             else
             {
                 randomGoalX = Random.Range(3f, 4f);
                 randomGoalY = Random.Range(-2f, -1f);
-                randomGoalZ = Random.Range(-7.0f, -8.0f);
+                randomGoalZ = Random.Range(-7.5f, -8.5f);
             }
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
@@ -158,7 +158,7 @@ public class RobotAgent : Agent
 
             float rotationAngle = Random.Range(-45f, 45f);
 
-            randomGoalX = Random.Range(8f, 9f);
+            randomGoalX = Random.Range(7f, 8f);
             randomGoalY = Random.Range(-2.5f, -1.5f);
             randomGoalZ = Random.Range(9f, 10f);
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
@@ -175,7 +175,7 @@ public class RobotAgent : Agent
 
             float rotationAngle = Random.Range(-45f, 45f);
 
-            randomGoalX = Random.Range(-9f, -8f);
+            randomGoalX = Random.Range(-8f, -7f);
             randomGoalY = Random.Range(-2.5f, -1.5f);
             randomGoalZ = Random.Range(9f, 10f);
 
@@ -193,7 +193,7 @@ public class RobotAgent : Agent
     {
         var dirToGo = Vector3.zero;
         var rotateDir = Vector3.zero;
-        dirToGo = transform.forward * 0.03f + transform.up * act0 * 0.02f;
+        dirToGo = transform.forward * 0.03f + transform.up * act0 * 0.025f;
         rotateDir = -transform.up * act1;
 
         transform.Rotate(rotateDir, Time.fixedDeltaTime * Math.Abs(act1));
