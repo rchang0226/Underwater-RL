@@ -45,7 +45,7 @@ Material:
     - _RefrBump: 0.03
     - _RefrDistortionAmount: 0.04
     - _ScatterAmount: 3.5
-    - _Visibility: 20
+    - _Visibility: 15
     - _WaterLevel: 0
     - _WaveScale: 1
     - _WindSpeed: 0.6

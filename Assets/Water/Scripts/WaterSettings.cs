@@ -35,5 +35,5 @@ public class WaterSettings
 	public Color waterExtinction;
 	public Color sunExtinction;
 
-	public static float controlVisibility = 10f;
+	public static float controlVisibility = 15f;
 }
