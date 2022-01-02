@@ -52,12 +52,19 @@ public class RobotAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        var random_robot_goal = GetRandomSpawnPos();
-        m_AgentRb.transform.position = random_robot_goal.Item1;
-        m_AgentRb.transform.eulerAngles = new Vector3(0f, random_robot_goal.Item2, 0f);
+        //var random_robot_goal = GetRandomSpawnPos();
+        //m_AgentRb.transform.position = random_robot_goal.Item1;
+        //m_AgentRb.transform.eulerAngles = new Vector3(0f, random_robot_goal.Item2, 0f);
+
+        m_AgentRb.transform.position = new Vector3(11.23f, -3.42f, -0.376f);
+        m_AgentRb.transform.eulerAngles = new Vector3(0f, 180f, 0f);
 
         m_AgentRb.velocity = Vector3.zero;
         m_AgentRb.angularVelocity = Vector3.zero;
+
+        randomGoalX = -6.67f;
+        randomGoalY = -1.97f;
+        randomGoalZ = -3.45f;
 
         SetResetParameters();
     }
