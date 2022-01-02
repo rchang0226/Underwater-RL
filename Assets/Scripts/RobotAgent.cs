@@ -56,8 +56,13 @@ public class RobotAgent : Agent
         //m_AgentRb.transform.position = random_robot_goal.Item1;
         //m_AgentRb.transform.eulerAngles = new Vector3(0f, random_robot_goal.Item2, 0f);
 
-        m_AgentRb.transform.position = new Vector3(11.23f, -3.42f, -0.376f);
-        m_AgentRb.transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        // test0
+        m_AgentRb.transform.position = new Vector3(8f, -2f, -0.376f);
+        m_AgentRb.transform.eulerAngles = new Vector3(0f, 270f, 0f);
+
+        // test2
+//        m_AgentRb.transform.position = new Vector3(11.23f, -3.42f, -0.376f);
+//        m_AgentRb.transform.eulerAngles = new Vector3(0f, 180f, 0f);
 
         m_AgentRb.velocity = Vector3.zero;
         m_AgentRb.angularVelocity = Vector3.zero;
