@@ -52,17 +52,17 @@ public class RobotAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        //var random_robot_goal = GetRandomSpawnPos();
-        //m_AgentRb.transform.position = random_robot_goal.Item1;
-        //m_AgentRb.transform.eulerAngles = new Vector3(0f, random_robot_goal.Item2, 0f);
+        var random_robot_goal = GetRandomSpawnPos();
+        m_AgentRb.transform.position = random_robot_goal.Item1;
+        m_AgentRb.transform.eulerAngles = new Vector3(0f, random_robot_goal.Item2, 0f);
 
         // test0
 //        m_AgentRb.transform.position = new Vector3(8f, -2f, -0.376f);
 //        m_AgentRb.transform.eulerAngles = new Vector3(0f, 270f, 0f);
 
-        // test1
-        m_AgentRb.transform.position = new Vector3(15.0f, -3.0f, 8.5f);
-        m_AgentRb.transform.eulerAngles = new Vector3(0f, 270f, 0f);
+//        // test1
+//        m_AgentRb.transform.position = new Vector3(15.0f, -3.0f, 8.5f);
+//        m_AgentRb.transform.eulerAngles = new Vector3(0f, 270f, 0f);
 
         // test2
 //        m_AgentRb.transform.position = new Vector3(11.23f, -3.42f, -0.376f);
@@ -85,7 +85,7 @@ public class RobotAgent : Agent
         var randomGoal = Vector3.zero;
 
         float chance_Robot = Random.Range(0f, 1f);
-        if (chance_Robot < 0.3f)
+        if (chance_Robot < 0.2f)
         {
             var randomPosX = Random.Range(-1f, 1f);
             var randomPosY = Random.Range(-2f, -1f);
@@ -112,7 +112,7 @@ public class RobotAgent : Agent
             return (randomSpawnPos, rotationAngle, randomGoal);
         }
 
-        else if (chance_Robot < 0.55f)
+        else if (chance_Robot < 0.4f)
         {
             var randomPosX = Random.Range(-4f, -3f);
             var randomPosY = Random.Range(-2f, -1f);
@@ -139,7 +139,7 @@ public class RobotAgent : Agent
             return (randomSpawnPos, rotationAngle, randomGoal);
         }
 
-        else if (chance_Robot < 0.8f)
+        else if (chance_Robot < 0.6f)
         {
             var randomPosX = Random.Range(3f, 4f);
             var randomPosY = Random.Range(-2f, -1f);
@@ -166,7 +166,7 @@ public class RobotAgent : Agent
             return (randomSpawnPos, rotationAngle, randomGoal);
         }
 
-        else if (chance_Robot < 0.9f)
+        else if (chance_Robot < 0.8f)
         {
             var randomPosX = Random.Range(-9f, -8f);
             var randomPosY = Random.Range(-2f, -1f);
@@ -174,9 +174,9 @@ public class RobotAgent : Agent
 
             float rotationAngle = Random.Range(-45f, 45f);
 
-            randomGoalX = Random.Range(7f, 8f);
+            randomGoalX = Random.Range(15f, 16f);
             randomGoalY = Random.Range(-2.5f, -1.5f);
-            randomGoalZ = Random.Range(9f, 10f);
+            randomGoalZ = Random.Range(15f, 16f);
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
 
@@ -191,9 +191,9 @@ public class RobotAgent : Agent
 
             float rotationAngle = Random.Range(-45f, 45f);
 
-            randomGoalX = Random.Range(-8f, -7f);
+            randomGoalX = Random.Range(-16f, -15f);
             randomGoalY = Random.Range(-2.5f, -1.5f);
-            randomGoalZ = Random.Range(9f, 10f);
+            randomGoalZ = Random.Range(15f, 16f);
 
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
