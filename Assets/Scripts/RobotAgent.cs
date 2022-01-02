@@ -71,9 +71,9 @@ public class RobotAgent : Agent
         m_AgentRb.velocity = Vector3.zero;
         m_AgentRb.angularVelocity = Vector3.zero;
 
-        randomGoalX = -6.67f;
-        randomGoalY = -1.97f;
-        randomGoalZ = -3.45f;
+//        randomGoalX = -6.67f;
+//        randomGoalY = -1.97f;
+//        randomGoalZ = -3.45f;
 
         SetResetParameters();
     }
