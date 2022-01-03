@@ -13,7 +13,7 @@ using Unity.MLAgents.Actuators;
 
 public class RobotAgent : Agent
 {
-    Rigidbody m_AgentRb;
+    public Rigidbody m_AgentRb;
 
     RayPerceptionSensorComponent3D RayInput;
     ObsSideChannel obsSideChannel;
@@ -24,6 +24,8 @@ public class RobotAgent : Agent
 
     public static float horizontal_distance = 0f;
     public static float angle_rb_2_g = 0f;
+
+    public static bool testMode;
 
     public Text debugText;
 

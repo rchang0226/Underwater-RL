@@ -16,9 +16,22 @@ public class ObsSideChannel : SideChannel
 
     protected override void OnMessageReceived(IncomingMessage msg)
     {
-        var visibility = msg.ReadFloat32();
-        WaterSettings.controlVisibility = visibility;
-        //Debug.Log(WaterSettings.controlVisibility);
+        if (RobotAgent.testMode)
+        {
+            IList<float> startPos = msg.ReadFloatList();
+
+            TestAgent.testStart = new Vector3(startPos[0], startPos[1], startPos[2]);
+            TestAgent.testGoal = new Vector3(startPos[3], startPos[4], startPos[5]);
+
+            RobotAgent.randomGoalX = startPos[6];
+            RobotAgent.randomGoalY = startPos[7];
+            RobotAgent.randomGoalZ = startPos[8];
+        }
+        else
+        {
+            var visibility = msg.ReadFloat32();
+            WaterSettings.controlVisibility = visibility;
+        }
     }
 
     public void SendObsToPython(float horizontalDist, float verticleDist, float Angle,
