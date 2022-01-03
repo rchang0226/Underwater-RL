@@ -13,8 +13,8 @@ using Unity.MLAgents.Actuators;
 
 public class TestAgent : RobotAgent
 {
-    public static Vector3 testStart;
-    public static Vector3 testGoal;
+    public static Vector3 testStartPos;
+    public static Vector3 testStartOri;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class TestAgent : RobotAgent
 
     public override void OnEpisodeBegin()
     {
-        m_AgentRb.transform.position = testStart;
-        m_AgentRb.transform.eulerAngles = testGoal;
+        m_AgentRb.transform.position = testStartPos;
+        m_AgentRb.transform.eulerAngles = testStartOri;
     }
 }
