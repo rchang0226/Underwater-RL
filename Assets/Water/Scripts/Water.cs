@@ -123,7 +123,7 @@ public class Water : MonoBehaviour
 		float scatterFade = Mathf.Clamp01((.15f - lightDir.y) * 4);
 
 		// uncomment if want to adjust visibility through editor, else initial visibility set in line 38 of WaterSettings.cs 
-		 WaterSettings.controlVisibility = Settings.visibility;
+//		   WaterSettings.controlVisibility = Settings.visibility;
 
 		if (surfaceMaterial)
 		{
