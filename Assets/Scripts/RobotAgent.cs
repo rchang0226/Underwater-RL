@@ -172,7 +172,7 @@ public class RobotAgent : Agent
         {
             var randomPosX = Random.Range(-10.5f, -9.5f);
             var randomPosY = Random.Range(-2f, -1f);
-            var randomPosZ = Random.Range(-3f, -4f);
+            var randomPosZ = Random.Range(0f, 1f);
 
             float rotationAngle = Random.Range(-45f, 45f);
 
@@ -189,7 +189,7 @@ public class RobotAgent : Agent
         {
             var randomPosX = Random.Range(9.5f, 10.5f);
             var randomPosY = Random.Range(-3f, -2f);
-            var randomPosZ = Random.Range(-3f, -4f);
+            var randomPosZ = Random.Range(0f, 1f);
 
             float rotationAngle = Random.Range(-45f, 45f);
 
