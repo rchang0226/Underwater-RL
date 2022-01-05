@@ -170,9 +170,9 @@ public class RobotAgent : Agent
 
         else if (chance_Robot < 0.8f)
         {
-            var randomPosX = Random.Range(-10.5f, -9.5f);
-            var randomPosY = Random.Range(-2f, -1f);
-            var randomPosZ = Random.Range(0f, 1f);
+            var randomPosX = Random.Range(-9f, -8f);
+            var randomPosY = Random.Range(-3f, -2f);
+            var randomPosZ = Random.Range(3f, 4f);
 
             float rotationAngle = Random.Range(-45f, 45f);
 
@@ -187,9 +187,9 @@ public class RobotAgent : Agent
 
         else
         {
-            var randomPosX = Random.Range(9.5f, 10.5f);
-            var randomPosY = Random.Range(-3f, -2f);
-            var randomPosZ = Random.Range(0f, 1f);
+            var randomPosX = Random.Range(8f, 9f);
+            var randomPosY = Random.Range(-2f, -1f);
+            var randomPosZ = Random.Range(3f, 4f);
 
             float rotationAngle = Random.Range(-45f, 45f);
 
