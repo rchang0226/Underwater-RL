@@ -2135,7 +2135,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 15000
   m_AgentRb: {fileID: 897683546}
   debugText: {fileID: 1904686597}
 --- !u!114 &897683545
