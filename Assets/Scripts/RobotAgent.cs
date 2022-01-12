@@ -93,7 +93,7 @@ public class RobotAgent : Agent
             var randomPosY = Random.Range(-2f, -1f);
             var randomPosZ = Random.Range(3f, 4.5f);
 
-            float rotationAngle = Random.Range(90f, 270f);
+            float rotationAngle = Random.Range(135f, 225f);
 
             float chance_Goal = Random.Range(0f, 1f);
             if (chance_Goal < 0.5f)
