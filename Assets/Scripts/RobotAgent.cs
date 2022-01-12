@@ -122,19 +122,10 @@ public class RobotAgent : Agent
 
             float rotationAngle = Random.Range(-45f, 135f);
 
-            float chance_Goal = Random.Range(0f, 1f);
-            if (chance_Goal < 0.5f)
-            {
-                randomGoalX = Random.Range(-4f, -3f);
-                randomGoalY = Random.Range(-1.5f, -1f);
-                randomGoalZ = Random.Range(3.5f, 4f);
-            }
-            else
-            {
-                randomGoalX = Random.Range(3f, 4f);
-                randomGoalY = Random.Range(-2f, -1.5f);
-                randomGoalZ = Random.Range(3.5f, 4f);
-            }
+            randomGoalX = Random.Range(-3.5f, 3.5f);
+            randomGoalY = Random.Range(-1.9f, -1.1f);
+            randomGoalZ = Random.Range(3.5f, 4f);
+
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
 
@@ -149,19 +140,10 @@ public class RobotAgent : Agent
 
             float rotationAngle = Random.Range(-135f, 45f);
 
-            float chance_Goal = Random.Range(0f, 1f);
-            if (chance_Goal < 0.5f)
-            {
-                randomGoalX = Random.Range(-4f, -3f);
-                randomGoalY = Random.Range(-1.5f, -1f);
-                randomGoalZ = Random.Range(3.5f, 4f);
-            }
-            else
-            {
-                randomGoalX = Random.Range(3f, 4f);
-                randomGoalY = Random.Range(-2f, -1.5f);
-                randomGoalZ = Random.Range(3.5f, 4f);
-            }
+            randomGoalX = Random.Range(-3.5f, 3.5f);
+            randomGoalY = Random.Range(-1.9f, -1.1f);
+            randomGoalZ = Random.Range(3.5f, 4f);
+
             randomSpawnPos = new Vector3(randomPosX, randomPosY, randomPosZ);
             randomGoal = new Vector3(randomGoalX, randomGoalY, randomGoalZ);
 
@@ -211,7 +193,7 @@ public class RobotAgent : Agent
     {
         var dirToGo = Vector3.zero;
         var rotateDir = Vector3.zero;
-        dirToGo = transform.forward * 0.03f + transform.up * act0 * 0.025f;
+        dirToGo = transform.forward * 0.03f + transform.up * act0 * 0.02f;
         rotateDir = -transform.up * act1;
 
         transform.Rotate(rotateDir, Time.fixedDeltaTime * Math.Abs(act1));
