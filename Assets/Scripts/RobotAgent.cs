@@ -213,7 +213,7 @@ public class RobotAgent : Agent
 
         AddReward(-1f / MaxStep);
         obsSideChannel.SendObsToPython(ObsInfo.Item1, ObsInfo.Item2, ObsInfo.Item3, ObsInfo.Item4,
-        m_AgentRb.transform.position[0], m_AgentRb.transform.position[2]);
+        m_AgentRb.transform.position[0], m_AgentRb.transform.position[2], m_AgentRb.transform.eulerAngles[1]);
     }
 
     public (float, float, float, float) GetObsInfo()
