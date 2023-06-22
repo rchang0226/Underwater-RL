@@ -15,6 +15,8 @@ public class RobotAgent : Agent
 {
     public Rigidbody m_AgentRb;
 
+    public Transform target;
+
     RayPerceptionSensorComponent3D RayInput;
     ObsSideChannel obsSideChannel;
 
@@ -58,6 +60,8 @@ public class RobotAgent : Agent
         m_AgentRb.transform.position = random_robot_goal.Item1;
         m_AgentRb.transform.eulerAngles = new Vector3(0f, random_robot_goal.Item2, 0f);
 
+        target.position = random_robot_goal.Item3;
+
         // test0
 //        m_AgentRb.transform.position = new Vector3(8f, -2f, -0.376f);
 //        m_AgentRb.transform.eulerAngles = new Vector3(0f, 270f, 0f);
@@ -86,7 +90,7 @@ public class RobotAgent : Agent
         var randomSpawnPos = Vector3.zero;
         var randomGoal = Vector3.zero;
 
-        float chance_Robot = Random.Range(0f, 1f);
+        float chance_Robot = Random.Range(0f, 0.2f);
         if (chance_Robot < 0.2f)
         {
             var randomPosX = Random.Range(-1f, 1f);
