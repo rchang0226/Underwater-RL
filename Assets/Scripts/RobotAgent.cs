@@ -90,7 +90,7 @@ public class RobotAgent : Agent
         var randomSpawnPos = Vector3.zero;
         var randomGoal = Vector3.zero;
 
-        float chance_Robot = Random.Range(0f, 0.2f);
+        float chance_Robot = Random.Range(0f, 1f);
         if (chance_Robot > 1f)
         {
             var randomPosX = Random.Range(-1f, 1f);
