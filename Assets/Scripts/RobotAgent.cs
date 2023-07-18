@@ -61,6 +61,8 @@ public class RobotAgent : Agent
         m_AgentRb.transform.eulerAngles = new Vector3(0f, random_robot_goal.Item2, 0f);
 
         target.position = random_robot_goal.Item3;
+        float randomAngle = Random.Range(0f, 360f);
+        target.eulerAngles = new Vector3(0f, randomAngle, 0f);
 
         // test0
 //        m_AgentRb.transform.position = new Vector3(8f, -2f, -0.376f);
