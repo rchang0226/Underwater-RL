@@ -62,7 +62,7 @@ public class RobotAgent : Agent
 
         target.position = random_robot_goal.Item3;
         float randomAngle = Random.Range(0f, 360f);
-        target.eulerAngles = new Vector3(0f, randomAngle, 0f);
+        target.eulerAngles = new Vector3(0f, 45f, 0f);
 
         // test0
 //        m_AgentRb.transform.position = new Vector3(8f, -2f, -0.376f);
@@ -92,8 +92,13 @@ public class RobotAgent : Agent
         var randomSpawnPos = Vector3.zero;
         var randomGoal = Vector3.zero;
 
-        float chance_Robot = Random.Range(0f, 1f);
-        if (chance_Robot > 1f)
+        float chance_Robot = Random.Range(1.2f, 1.4f);
+        if (chance_Robot > 1.2f) {
+            randomSpawnPos = new Vector3(1.17f, -1.6f, -5.62f);
+            randomGoal = new Vector3(3.17f, -2.23f, -7.62f);
+            return (randomSpawnPos, 135f, randomGoal);
+        }
+        else if (chance_Robot > 1f)
         {
             var randomPosX = Random.Range(-1f, 1f);
             var randomPosY = Random.Range(-1.25f, -0.75f);
